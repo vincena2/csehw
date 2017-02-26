@@ -17,7 +17,7 @@ public class CalcTest {
 	public void  testadd1() {
 		Calc testadd1 = new Calc();
 		testadd1.add(-5, 2);
-		assertEquals(-3, -3);
+		assertEquals(-0, -3);
 	}
 	@Test
 	public void  add3() {
