@@ -8,6 +8,5 @@ machine:
 
 dependencies:
   pre:
-    - sudo rsync -r --include=*/ --include=*.jar --exclude=* .jdk-overlay/jre $JAVA_HOME
-
+    - sudo include=*.jar 
 
