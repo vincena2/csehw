@@ -8,8 +8,8 @@ public class hw2_Test {
 	@Test
 	public void  testadd() {
 		Calc testadd = new Calc();
-		testadd.add(5, 2);
-		assertEquals(7, 7);
+		testadd.add(2, 2);
+		assertEquals(4, 4);
 	}
 	@Test
 	public void  testadd1() {
