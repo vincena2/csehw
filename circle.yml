@@ -1,9 +1,6 @@
 machine:
-    java:
-        version: openjdk7
+  java:
+    version: oraclejdk8
 general:
-    artifacts:
-        - "target/java-demo.war"
-test:
-    post:
-        - ant clean install
+  artifacts:
+    - "build/libs/*.jar"
