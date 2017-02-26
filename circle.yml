@@ -1,0 +1,18 @@
+
+machine:
+  timezone:
+    America/New_York
+
+  java:
+    version: openjdk7
+
+dependencies:
+  pre:
+    - sudo rsync -r --include=*/ --include=*.jar --exclude=* .jdk-overlay/jre $JAVA_HOME
+
+
+
+test:
+  post:
+    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
+    - find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
