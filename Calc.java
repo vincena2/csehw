@@ -7,9 +7,9 @@ package cse321;
 
 public class Calc
 {
-static public int add (int a, int b)
+static public int add (int c, int b)
 {
-   return a + b;
+   return c + b;
 }
 
 static public int subtract (int a, int b)
