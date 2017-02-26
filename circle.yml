@@ -6,4 +6,4 @@ general:
         - "target/java-demo.war"
 test:
     post:
-        - mvn clean install
+        - ant clean install
