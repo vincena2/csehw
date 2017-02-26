@@ -1,7 +1,3 @@
-{
-  "language": "java",
-  "script": "ant main",
-  "group": "stable",
-  "dist": "precise",
-  "os": "linux"
-}
+language: java
+jdk:
+  - oraclejdk8
