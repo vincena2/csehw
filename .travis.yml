@@ -1,2 +1,7 @@
 language: java
-script: ant main
+install: ant deps
+sudo: false
+addons:
+  apt:
+    packages:
+      - oracle-java8-installer
