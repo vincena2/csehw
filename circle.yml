@@ -1,14 +1,3 @@
-test:
-  override:
-  - mvn clean
-  - mvn dependency:resolve
-  - mvn test -Dtest=UnitTestSuite
-  - mvn test -Dtest=IntegrationTestSuite
-  post:
-  - mvn clean cobertura:cobertura coveralls:cobertura
-
 machine:
-  timezone:
-    America/Los_Angeles
   java:
-    version: oraclejdk7
+    version: openjdk7
